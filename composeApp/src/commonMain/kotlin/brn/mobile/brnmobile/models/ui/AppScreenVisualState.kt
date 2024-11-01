@@ -6,7 +6,6 @@ import androidx.compose.ui.unit.dp
 sealed interface AppScreenVisualState {
     object Loading : AppScreenVisualState
     object MainScr : AppScreenVisualState
-    object Scr2 : AppScreenVisualState
 }
 
 data class AdaptiveUiVisualState(

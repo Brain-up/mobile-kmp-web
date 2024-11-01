@@ -6,8 +6,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import brn.mobile.brnmobile.models.ui.AppScreenVisualState
 import brn.mobile.brnmobile.theme.AppTheme
-import brn.mobile.brnmobile.ui.LoginScreen
-import brn.mobile.brnmobile.ui.ScreenTest
+import brn.mobile.brnmobile.ui.WebScreen
 import brn.mobile.brnmobile.ui.SplashScreen
 import cafe.adriel.voyager.core.screen.Screen
 import cafe.adriel.voyager.navigator.Navigator
@@ -20,8 +19,7 @@ internal fun App() {
     val screen: Screen = appScreenModel.uiState.let {
         when (it) {
             AppScreenVisualState.Loading -> SplashScreen
-            AppScreenVisualState.MainScr -> ScreenTest
-            AppScreenVisualState.Scr2 -> LoginScreen
+            AppScreenVisualState.MainScr ->  WebScreen
         }
     }
 

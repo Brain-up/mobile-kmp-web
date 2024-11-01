@@ -1,8 +1,9 @@
 [versions]
 
+composeWebviewMultiplatform = "1.9.40-alpha04"
 kotlin = "2.0.20"
 compose = "1.7.0-beta01"
-agp = "8.7.1"
+agp = "8.7.2"
 androidx-activityCompose = "1.9.3"
 androidx-uiTest = "1.7.4"
 skikoIos = "0.8.17"
@@ -28,6 +29,7 @@ relayGradlePlugin = "0.3.12"
 androidx-activityCompose = { module = "androidx.activity:activity-compose", version.ref = "androidx-activityCompose" }
 androidx-uitest-testManifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "androidx-uiTest" }
 androidx-uitest-junit4 = { module = "androidx.compose.ui:ui-test-junit4", version.ref = "androidx-uiTest" }
+compose-webview-multiplatform = { module = "io.github.kevinnzou:compose-webview-multiplatform", version.ref = "composeWebviewMultiplatform" }
 skiko = { module = "org.jetbrains.skiko:skiko", version.ref = "skikoIos" }
 skiko-ios = { module = "org.jetbrains.skiko:skiko-ios", version.ref = "skikoIos" }
 skiko-iosarm64 = { module = "org.jetbrains.skiko:skiko-iosarm64", version.ref = "skikoIos" }

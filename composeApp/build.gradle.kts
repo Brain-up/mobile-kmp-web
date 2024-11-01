@@ -69,6 +69,8 @@ kotlin {
             implementation(libs.kotlinx.datetime)
             implementation(libs.libres)
             implementation(libs.insetsx)
+            // use api since the desktop app need to access the Cef to initialize it.
+            api(libs.compose.webview.multiplatform)
         }
 
         commonTest.dependencies {

@@ -27,8 +27,8 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.em
 import androidx.compose.ui.unit.sp
-import brainup.composeapp.generated.resources.Res
-import brainup.composeapp.generated.resources.snailvector
+import brainupweb.composeapp.generated.resources.Res
+import brainupweb.composeapp.generated.resources.snailvector
 import brn.mobile.brnmobile.MainRes
 import brn.mobile.brnmobile.di.getScreenModel
 import cafe.adriel.voyager.core.screen.Screen
@@ -53,7 +53,7 @@ internal object SplashScreen : Screen {
 
         LaunchedEffect(uiState.doNavigateToMain) {
             if (uiState.doNavigateToMain) {
-                navigator.replaceAll(ScreenTest)
+                navigator.replaceAll(WebScreen)
             }
         }
         screenModel.initAppData()
