@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">BrainUp</string>
+
+    <!-- Allowed caller template -->
+    <string name="allowed_caller_log" translatable="false">
+        Caller has a valid certificate, but its package doesn\'t match any expected package for the
+        given certificate. To allow this caller, add the following to the allowed callers list:\n
+        <![CDATA[
+        <signature name=\"${name}\" package=\"${pack}\">\n\t<key>${key}</key>\n</signature>\n
+        ]]>
+    </string>
+    <!-- Cast menu item -->
+<!--    <string name="media_route_menu_title" translatable="false">Cast</string>-->
+<!--    <string name="playlist_button">Playlist</string>-->
+</resources>
